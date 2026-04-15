@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Comprehensive Table Exercise</title>
+    <link rel="icon" href="C:\Users\Desktop\CALEB\icons\veritas icon.jfif">
+
+    <style>
+        /* Task 4: Table Width 100% */
+        table {
+            width: 100%;
+            /* Task 8 & 13: Separate borders to allow for Spacing and Rounding */
+            border-collapse: separate; 
+            border-spacing: 10px; 
+            /* Your 'Big Box' requirement + Task 2 (Borders) */
+            border: 5px solid green;
+            border-radius: 20px;
+            padding: 10px;
+            font-family: sans-serif;
+        }
+
+        /* Task 4: Setting the first column to 50% width */
+        th:first-child, td:first-child {
+            width: 50%;
+        }
+
+        /* Task 2 (Borders), Task 5 (Backgrounds), Task 8 (Padding), Task 13 (Rounded) */
+        th, td {
+            border: 3px solid green;
+            background-color: purple;
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: left;
+        }
+
+        /* Task 1 & 14: Bold Headings */
+        th {
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        /* Task 6 & 7: Zebra Stripes (Even rows slightly different shade) */
+        tr:nth-child(even) td {
+            background-color: #5a005a; 
+        }
+
+        /* Task 12: Hoverable Table (Row highlights on mouse over) */
+        tr:hover td {
+            background-color: #800080; 
+            border-color: #00FF00; /* Bright green glow on hover */
+        }
+
+        /* Task 11: Horizontal Divider logic applied to headers */
+        thead tr {
+            border-bottom: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="color: purple; text-align: center;">Student Record - Lab 3 Final Task</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4" style="text-align: center; font-size: 1.4em;">
+                    Academic Information System
+                </th>
+            </tr>
+            <tr>
+                <th>Student Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Academic Level</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Caleb Usuwa</td>
+                <td>20</td>
+                <td>Lagos</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>22</td>
+                <td>Abuja</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>21</td>
+                <td>Port Harcourt</td>
+                <td rowspan="2" style="text-align: center; vertical-align: middle;">
+                    Continuing Student
+                </td>
+            </tr>
+            <tr>
+                <td>Mark Obi</td>
+                <td>23</td>
+                <td>Enugu</td>
+                </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

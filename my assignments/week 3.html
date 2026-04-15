@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3: HTML Lists Solutions</title>
+    <style>
+        /* CSS specifically for Task 6: Horizontal Navigation Menu */
+        .horizontal-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+        .horizontal-nav li {
+            float: left;
+        }
+        .horizontal-nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .horizontal-nav li a:hover {
+            background-color: #111;
+        }
+        
+        /* Basic styling to separate the tasks visually */
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .task-section { margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid #ccc; }
+        h3 { color: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <div class="task-section">
+        <h3>Task 1: Unordered List (Student Items)</h3>
+        <ul>
+            <li>Notebook</li>
+            <li>Pen</li>
+            <li>Textbook</li>
+            <li>Laptop</li>
+        </ul>
+    </div>
+
+    <div class="task-section">
+        <h3>Task 2: Ordered List (Registration Steps)</h3>
+        <ol>
+            <li>Visit the school portal</li>
+            <li>Fill in your details</li>
+            <li>Upload required documents</li>
+            <li>Submit the form</li>
+        </ol>
+    </div>
+
+    <div class="task-section">
+        <h3>Task 3: Description List (School Terms)</h3>
+        <dl>
+            <dt>Lecture</dt>
+            <dd>- A teaching session</dd>
+            <dt>Assignment</dt>
+            <dd>- A task given to students</dd>
+            <dt>Matriculation</dt>
+            <dd>- The formal process of entering a university</dd>
+        </dl>
+    </div>
+
+    <div class="task-section">
+        <h3>Task 4: Different Marker Styles</h3>
+        <p>Circle:</p>
+        <ul style="list-style-type:circle;">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <p>Square:</p>
+        <ul style="list-style-type:square;">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <p>None:</p>
+        <ul style="list-style-type:none;">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </div>
+
+    <div class="task-section">
+        <h3>Task 5: Nested List (Categories)</h3>
+        <ul>
+            <li>Fruits
+                <ul>
+                    <li>Apple</li>
+                    <li>Orange</li>
+                    <li>Banana</li>
+                </ul>
+            </li>
+            <li>Vegetables
+                <ul>
+                    <li>Carrot</li>
+                    <li>Cabbage</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="task-section">
+        <h3>Task 6: Horizontal Navigation Menu</h3>
+        <ul class="horizontal-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Portal</a></li>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="task-section">
+        <h3>Task 7: Different Ordered List Types</h3>
+        <p>Numbers (Default):</p>
+        <ol type="1">
+            <li>First Item</li>
+            <li>Second Item</li>
+        </ol>
+        <p>Uppercase Letters:</p>
+        <ol type="A">
+            <li>First Item</li>
+            <li>Second Item</li>
+        </ol>
+        <p>Lowercase Letters:</p>
+        <ol type="a">
+            <li>First Item</li>
+            <li>Second Item</li>
+        </ol>
+        <p>Uppercase Roman Numerals:</p>
+        <ol type="I">
+            <li>First Item</li>
+            <li>Second Item</li>
+        </ol>
+        <p>Lowercase Roman Numerals:</p>
+        <ol type="i">
+            <li>First Item</li>
+            <li>Second Item</li>
+        </ol>
+    </div>
+
+    <div class="task-section">
+        <h3>Task 8: Control List Counting</h3>
+        <ol start="10">
+            <li>Item 10</li>
+            <li>Item 11</li>
+            <li>Item 12</li>
+        </ol>
+    </div>
+
+    <div class="task-section">
+        <h3>Task 9: Nested Ordered List</h3>
+        <ol>
+            <li>First Year
+                <ol>
+                    <li>First Semester</li>
+                    <li>Second Semester</li>
+                </ol>
+            </li>
+            <li>Second Year
+                <ol>
+                    <li>First Semester</li>
+                    <li>Second Semester</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+    <div class="task-section">
+        <h3>Task 10: Combined List Types</h3>
+        <ul>
+            <li>Unordered Item A</li>
+            <li>Unordered Item B</li>
+        </ul>
+        <ol>
+            <li>Ordered Step 1</li>
+            <li>Ordered Step 2</li>
+        </ol>
+        <dl>
+            <dt>HTML</dt>
+            <dd>- HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>- Cascading Style Sheets</dd>
+        </dl>
+    </div>
+
+    <div class="task-section">
+        <h3>Task 11: Emphasized Items</h3>
+        <ul>
+            <li><strong>Important:</strong> Submit your assignment before the deadline.</li>
+            <li><em>Note:</em> Ensure you attend all laboratory sessions.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
